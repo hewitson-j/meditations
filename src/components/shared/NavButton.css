@@ -1,0 +1,16 @@
+.navbutton {
+  border: none;
+  background-color: rgb(197, 170, 136);
+  padding: 0.5rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px gray;
+  transition-duration: 0.2s;
+}
+
+.navbutton:hover {
+  background-color: rgb(181, 146, 103);
+  cursor: pointer;
+}
+
+.navbutton-default {
+}
