@@ -1,6 +1,7 @@
 .navbutton {
-  border: none;
-  background-color: rgb(197, 170, 136);
+  border: 2px;
+  border-color: transparent;
+  background-color: transparent;
   padding: 0.5rem;
   border-radius: 10px;
   box-shadow: 5px 5px 5px gray;
@@ -8,9 +9,14 @@
 }
 
 .navbutton:hover {
-  background-color: rgb(181, 146, 103);
   cursor: pointer;
 }
 
-.navbutton-default {
+.navbutton-navigation {
+  border-color: #066f90;
+  color: #066f90;
+}
+
+.navbutton-navigation:hover {
+  background-color: #0095c624;
 }
