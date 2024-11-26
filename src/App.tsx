@@ -1,12 +1,11 @@
-import { HashRouter, Route, Routes } from "react-router-dom";
-import Landing from "./components/Landing";
+import Router from "./Router";
+import ParticlesBg from "particles-bg";
 
 export default function App() {
   return (
-    <HashRouter>
-      <Routes>
-        <Route path="/" element={<Landing />} />
-      </Routes>
-    </HashRouter>
+    <>
+      <ParticlesBg type="cobweb" bg />
+      <Router />
+    </>
   );
 }
