@@ -1,13 +1,15 @@
-import "./Home.css";
+import "./Landing.css";
+import Header from "./shared/Header";
 import NavButton from "./shared/NavButton";
 import PageHead from "./shared/PageHead";
 
-export default function Home() {
+export default function Landing() {
   return (
-    <div className="home">
+    <div className="landing">
       <PageHead title="Home" />
       <div>
-        <h1>Meditations</h1>
+        <Header size="h1">Meditations</Header>
+        <h2>A Site for Reflection</h2>
         <NavButton to="/home" type="navigation">
           Home
         </NavButton>

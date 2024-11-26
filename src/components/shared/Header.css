@@ -1,0 +1,23 @@
+h1.header {
+  font-size: 32pt;
+}
+
+h2.header {
+  font-size: 28pt;
+}
+
+h3.header {
+  font-size: 24pt;
+}
+
+h4.header {
+  font-size: 20pt;
+}
+
+h5.header {
+  font-size: 16pt;
+}
+
+h6.header {
+  font-size: 14pt;
+}
