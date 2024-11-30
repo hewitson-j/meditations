@@ -1,9 +1,9 @@
-import "./Landing.css";
+import "./LandingPage.css";
 import Header from "../shared/Header";
 import NavButton from "../shared/NavButton";
 import PageHead from "../shared/PageHead";
 
-export default function Landing() {
+export default function LandingPage() {
   return (
     <div className="landing">
       <PageHead title="Home" />
