@@ -1,7 +1,7 @@
 import "./Landing.css";
-import Header from "./shared/Header";
-import NavButton from "./shared/NavButton";
-import PageHead from "./shared/PageHead";
+import Header from "../shared/Header";
+import NavButton from "../shared/NavButton";
+import PageHead from "../shared/PageHead";
 
 export default function Landing() {
   return (
