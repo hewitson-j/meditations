@@ -23,24 +23,25 @@ export default function EntryPage() {
     "December",
   ];
 
-  const entry = testEntries[parseInt(id ? id : "1000")];
+  const entry = testEntries[parseInt(id ? id : "1000") - 1];
   if (!entry) navigate("/error/not-found");
 
   return (
     <div className="entry">
-      <PageHead title={`${entry.title}`} />
+      <PageHead title={`${entry?.title}`} />
       <div>
-        <Header size="h1">{entry.title}</Header>
+        <Header size="h1">{entry?.title}</Header>
         <p>
           Published -{" "}
-          {entry.timestamp.getDate() +
+          {entry?.timestamp.getDate() +
             " " +
-            months[entry.timestamp.getMonth()] +
+            months[entry?.timestamp.getMonth()] +
             " " +
-            entry.timestamp.getFullYear()}
+            entry?.timestamp.getFullYear()}
         </p>
+        <button onClick={() => navigate("/home")}>Home</button>
         <div className="entry-paragraphs">
-          {entry.paragraphs.map((paragraph, index) => {
+          {entry?.paragraphs.map((paragraph, index) => {
             if (paragraph.trim() === "") return <br key={`break-${index}`} />;
             else return <p key={`paragraph-${index}`}>{paragraph}</p>;
           })}
