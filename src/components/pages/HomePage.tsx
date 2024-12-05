@@ -17,7 +17,6 @@ export default function HomePage() {
       <div className="home-entries">
         <ul>
           {listItems.map((item) => {
-            console.log(item);
             const date =
               item.timestamp.getDate() +
               "/" +
