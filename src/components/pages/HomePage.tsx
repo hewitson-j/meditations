@@ -15,7 +15,7 @@ export default function HomePage() {
       <Header size="h1">Home</Header>
       <p>Welcome to the list! Feel free to look at any of the below entries.</p>
       <div className="home-entries">
-        <ul>
+        <ul className="home-list">
           {listItems.map((item) => {
             const date =
               item.timestamp.getDate() +
@@ -48,7 +48,7 @@ interface ListItemProps {
 function ListItem({ id, title, date }: ListItemProps) {
   const navigate = useNavigate();
   return (
-    <li onClick={() => navigate(`/entry/${id}`)}>
+    <li className="home-list-items" onClick={() => navigate(`/entry/${id}`)}>
       {title} - {date}
     </li>
   );
