@@ -2,10 +2,11 @@ import "./LandingPage.css";
 import Header from "../shared/Header";
 import NavButton from "../shared/NavButton";
 import PageHead from "../shared/PageHead";
+import PageContainer from "../shared/PageContainer";
 
 export default function LandingPage() {
   return (
-    <div className="landing">
+    <PageContainer className="landing">
       <PageHead title="Home" />
       <div>
         <Header size="h1">Meditations</Header>
@@ -14,6 +15,6 @@ export default function LandingPage() {
           Home
         </NavButton>
       </div>
-    </div>
+    </PageContainer>
   );
 }

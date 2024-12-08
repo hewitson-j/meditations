@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import "./ErrorPage.css";
+import PageContainer from "../shared/PageContainer";
 
 interface ErrorPageProps {
   title?: string;
@@ -13,7 +14,7 @@ export default function ErrorPage({
   const navigate = useNavigate();
 
   return (
-    <div className="error">
+    <PageContainer className="error">
       <div className="error-content">
         <h1>{title}</h1>
         <p>{message}</p>
@@ -25,6 +26,6 @@ export default function ErrorPage({
           Home
         </button>
       </div>
-    </div>
+    </PageContainer>
   );
 }

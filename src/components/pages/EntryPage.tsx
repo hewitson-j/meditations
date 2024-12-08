@@ -3,6 +3,8 @@ import "./EntryPage.css";
 import { testEntries } from "./testData";
 import Header from "../shared/Header";
 import PageHead from "../shared/PageHead";
+import PageContainer from "../shared/PageContainer";
+import NavButton from "../shared/NavButton";
 
 export default function EntryPage() {
   const { id } = useParams();
@@ -27,7 +29,7 @@ export default function EntryPage() {
   if (!entry) navigate("/error/not-found");
 
   return (
-    <div className="entry">
+    <PageContainer className="entry">
       <PageHead title={`${entry?.title}`} />
       <div>
         <Header size="h1">{entry?.title}</Header>
@@ -39,7 +41,7 @@ export default function EntryPage() {
             " " +
             entry?.timestamp.getFullYear()}
         </p>
-        <button onClick={() => navigate("/home")}>Home</button>
+        <NavButton to={"/home"}>Home</NavButton>
         <div className="entry-paragraphs">
           {entry?.paragraphs.map((paragraph, index) => {
             if (paragraph.trim() === "") return <br key={`break-${index}`} />;
@@ -47,6 +49,6 @@ export default function EntryPage() {
           })}
         </div>
       </div>
-    </div>
+    </PageContainer>
   );
 }

@@ -4,13 +4,14 @@ import Header from "../shared/Header";
 import PageHead from "../shared/PageHead";
 import "./HomePage.css";
 import { testEntries } from "./testData";
+import PageContainer from "../shared/PageContainer";
 
 export default function HomePage() {
   const { count, offset } = useEntriesContext();
   const listItems = testEntries.slice(offset, count);
 
   return (
-    <div className="home">
+    <PageContainer className="home">
       <PageHead title="Home" />
       <Header size="h1">Home</Header>
       <p>Welcome to the list! Feel free to look at any of the below entries.</p>
@@ -35,7 +36,7 @@ export default function HomePage() {
           })}
         </ul>
       </div>
-    </div>
+    </PageContainer>
   );
 }
 
