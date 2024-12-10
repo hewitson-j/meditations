@@ -10,6 +10,7 @@
 
 .navbutton:hover {
   cursor: pointer;
+  background-color: rgb(179, 179, 179);
 }
 
 .navbutton-navigation {
@@ -18,5 +19,6 @@
 }
 
 .navbutton-navigation:hover {
-  background-color: #0095c624;
+  background-color: #0094c6a8;
+  color: black;
 }
