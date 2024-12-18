@@ -1,1 +1,2 @@
 # Meditations
+A blog app
