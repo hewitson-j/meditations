@@ -21,7 +21,7 @@ export default function HomePage() {
             const date =
               item.timestamp.getDate() +
               "/" +
-              item.timestamp.getMonth() +
+              (item.timestamp.getMonth() + 1) +
               "/" +
               item.timestamp.getFullYear();
 
